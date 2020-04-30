@@ -6,7 +6,29 @@
   
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
-    
+        <style>
+          .p1 {
+            animation-duration: 2s;
+            animation-name: sslidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+          
+          
+          
+          @keyframes sslidein {
+            from {
+              margin-left: 50%;
+              width: 300%; 
+            }
+          
+            to {
+              margin-left: 10%;
+              width: 100%;
+            }
+          }
+          
+          </style>
         
         
         <title>Bootstrap</title>
@@ -36,45 +58,70 @@
                   </ul>
                 </div>
               </nav>
+              
+              <header style=" height: 100%; color:mediumspringgreen; font-size: xx-large;color:black; padding:3%; color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+
+                <h1 class="p1">Bootstrap</h1>
+        </header>
 
               <div class="fluid-container" style="margin: auto;">
             
 
-            <div class="row">
-              <div class="col">
-                <span class="badge badge-success">4.4</span>
-              </div>
-            </div>
             
             <div class="container">
               <h1>Events</h1>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="material-icons nav-link" style="vertical-align:middle;">event</i>
-                               
-                <h4>Hands-On</h4><br>
-                  <p><a href="hands-on1.html">Hands-On 1 </a></p>
-                  <p><a href="hands-on2.html">Hands-On 2</a></p>
-                  <p><a href="hands-on-3.html">Hands-On 3 </a></p>
-                  <p><a href="hands-on4.html">Hands-On 4 </a></p>
+                              
+
+                  <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hands-on
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <p>  <a href="hands-on1.html">Hands-On 1 </a></p>
+                 <p> <a href="hands-on2.html">Hands-On 2</a></p>
+                 <p><a href="hands-on-3.html">Hands-On 3 </a></p>
+                  <p> <a href="hands-on4.html">Hands-On 4 </a></p>
+                    </div>
+                  </div>
+               
+                
                 </li>
+
                 <li class="list-group-item">
-                    <i class="material-icons nav-link" style="vertical-align:middle;">event</i>
-                   
-                  <h4>Contact</h4><br>
-                  <p><a href="contact.html">click here</a></p>
-                  </li>
-                <li class="list-group-item">
-                  <i class="material-icons nav-link" style="vertical-align:middle;">event</i>
-           
-                <h4>Practice Check</h4><br>
-                  <p><a href="#">click here</a></p>
-                </li>
-                <li class="list-group-item">
-                  <i class="material-icons nav-link" style="vertical-align:middle;">event</i>
+                  
+                  <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Practice Check
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <p><a href="practice.html">True-Yem Home</a></p>
+                      <p><a href="menu-item-list.html">Menu Item</a></p>
+                      <p><a href="singup.html">Sign Up</a></p>
+                    </div>
+                  </div>
+               
+                
                  
-                <h4>Final Check</h4><br>
-                <p><a href="#">click here</a></p>
+                </li>
+
+                <li class="list-group-item">
+               
+                   
+                  <p><a href="contact.html"><button class="btn btn-success">Contact</button></a></p>
+                  </li>
+              
+                <li class="list-group-item">
+              
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Final Check
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  
+                    </div>
+                  </div>
                 </li>
                 
               
